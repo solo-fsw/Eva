@@ -1,0 +1,131 @@
+
+(rules PCB ResponseBoxV1B3
+  (snap_angle 
+    ninety_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3230)
+    (layer_rule 1#Top
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.5)
+    )
+    (layer_rule 16#Bottom
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 0.3048)
+    (clear 0.2032)
+    (clear 0.0762 (type smd_to_turn_gap))
+    (clear 0.508 (type default_boundary))
+    (clear 0.508 (type default_area))
+    (clear 0.508 (type boundary_via))
+    (clear 0.508 (type boundary_smd))
+    (clear 0.508 (type boundary_pin))
+    (clear 0.508 (type boundary_area))
+    (clear 0.508 (type boundary_RowCols))
+    (clear 0.508 (type boundary_Vcc))
+    (clear 0.508 (type via_area))
+    (clear 0.508 (type area_RowCols))
+    (clear 0.508 (type area_Vcc))
+  )
+  (padstack Round1$0.330200
+    (shape
+      (circle 1#Top 0.635 0.0 0.0)
+    )
+    (shape
+      (circle 16#Bottom 0.635 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack Round2$0.600000
+    (shape
+      (circle 1#Top 0.9048 0.0 0.0)
+    )
+    (shape
+      (circle 16#Bottom 0.9048 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    Round1$0.330200 Round1$0.330200 via
+  )
+  (via 
+    Round2$0.600000 Round2$0.600000 via
+  )
+  (via 
+    "Round1$0.330200-RowCols" Round1$0.330200 RowCols
+  )
+  (via 
+    "Round2$0.600000-RowCols" Round2$0.600000 RowCols
+  )
+  (via 
+    "Round1$0.330200-Vcc" Round1$0.330200 Vcc
+  )
+  (via 
+    "Round2$0.600000-Vcc" Round2$0.600000 Vcc
+  )
+  (via_rule
+    default Round1$0.330200
+  )
+  (via_rule
+    RowCols "Round1$0.330200-RowCols"
+  )
+  (via_rule
+    Vcc "Round1$0.330200-Vcc"
+  )
+  (class default
+    AUD D0 D1 D2 D3 D4 D5 D6
+    D7 D8 D9 D10 D11 D12 D13 D14
+    D15 GND N$1 N$2 N$3 N$4 N$5 N$6
+    N$7 N$8 N$9 N$10 N$11 N$12 N$13 N$14
+    N$15 N$16 N$20 N$26 N$27 N$28 N$29 N$30
+    N$31 N$32 N$33 N$34 N$35 N$36 N$37 N$38
+    N$39 N$40 N$41 N$42 N$43 N$44 N$45 N$46
+    N$47 N$48 N$49 N$50 N$51 N$52 N$53 N$54
+    N$55 N$56 N$57 N$58 N$59 N$60 N$61 N$62
+    N$63 N$64 N$65 N$66 RESET S0 S1 S2
+    S3 S4 S5 S6 S7 SCL SDA
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 0.3048)
+    )
+    (circuit 
+      (use_layer 1#Top 16#Bottom)
+    )
+  )
+  (class RowCols
+    (clearance_class RowCols)
+    (via_rule RowCols)
+    (rule
+      (width 0.3556)
+    )
+    (circuit 
+      (use_layer 1#Top 16#Bottom)
+    )
+  )
+  (class Vcc
+    +5V
+    (clearance_class Vcc)
+    (via_rule Vcc)
+    (rule
+      (width 0.3556)
+    )
+    (circuit 
+      (use_layer 1#Top 16#Bottom)
+    )
+  )
+)
