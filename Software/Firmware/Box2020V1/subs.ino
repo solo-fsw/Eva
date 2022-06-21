@@ -94,7 +94,17 @@ void handlecommands() {
       setmode();
       break;
     case 'P':
-      Serial.println("Pong,Box2020");
+      Serial.println("Pong,Eva");
+      break;
+    case 'M':
+      mode = EEPROM.read(1);
+      Serial.print("Mode:");
+      if (mode == ACTIVE) {
+        Serial.println("Active");
+      }
+      else if (mode == PASSIVE) {
+        Serial.println("Passive");
+      }
       break;
 
     default:
@@ -103,29 +113,20 @@ void handlecommands() {
   }
 }
 
-//void DumpMyInfo() {
-//  Serial.print("Version:");
-//  Serial.print(Version);
-//  Serial.print(",");
-//  Serial.print("Serialno:");
-//  Serial.print(Serialno);
-//  Serial.print(",");
-//  Serial.println("Device:Srbox2020");
-  //Serial.write(ETX);
-}
+
 
 void DumpMyInfo() {
-  Serial.print("{Version:\"");
+  Serial.print("{\"Version\":\"");
   Serial.print(Version);
   Serial.print("\",");
-  Serial.print("Serialno:\"");
+  Serial.print("\"Serialno\":\"");
   Serial.print(Serialno);
   Serial.print("\",");
-  Serial.println("Device:\"Srbox2020\"}");
+  Serial.println("\"Device\":\"Eva\"}");
   //Serial.write(ETX);
 }
 
-void writeStringToEEPROM(int addrOffset, const String &strToWrite)
+void writeStringToEEPROM(int addrOffset, const String & strToWrite)
 {
   byte len = strToWrite.length();
   EEPROM.write(addrOffset, len);

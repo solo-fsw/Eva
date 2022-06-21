@@ -13,6 +13,7 @@
 
 //20210501	1.0	Initial release
 //20220211 	1.1 Changed DumpInfo to output Jsonstring
+//20220617  1.2 Changed name Srbox2020 to Eva
 
 //Hardware macros
 #define BUTTON   A0    //PF7    *defines can be found in arduino\hardware\arduino\avr\variants\leonardo\pins_arduino.h* 
@@ -47,7 +48,7 @@ byte lastrespbutton =0;
 unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
 unsigned long debounceDelay = 1; //was 10 
 byte lastFlickerableState = 0;
-const String Version = "1.1";
+const String Version = "HW1:SW1.2";
 const String Serialno;
 
 //Enums

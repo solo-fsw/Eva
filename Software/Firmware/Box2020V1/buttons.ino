@@ -2,7 +2,6 @@ void buttonChanged(int state) {   //Trigger Button handeling
   if (mode == ACTIVE) {
     if (state == 0) {              //Button pressed
       PORTD = i2cread();
-
     }
     else {
       PORTD = 0;
