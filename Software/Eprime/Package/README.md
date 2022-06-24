@@ -8,7 +8,7 @@ With this package the intergration of an Eva box in your E-prime script is very 
 <!-- Package calls -->
 ## Package Calls
 
-| Function | Parameter | Returns | Type
+| Function | Parameter(s) | Returns | Type
 | ------------- | ------------- | ------------- | ------------- |
 | Eva_Writemarker  | Marker value |   |int or byte| 
 | Eva_SetActiveMode  |    | Status | string |
