@@ -35,6 +35,6 @@ Sub SendMarker(c As context , x As Integer)
  Eva_WriteMarker x    
 End Sub
 ```
-Add the code to the required task event.
+Add the code and marker value to the required task event.
 
 ![Onsetmarker](https://user-images.githubusercontent.com/98744988/175535976-3020274b-d028-449e-a84f-acc6cafd22dc.gif)
