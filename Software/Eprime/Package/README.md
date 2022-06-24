@@ -13,7 +13,7 @@ With this package the intergration of an Eva box in your E-prime script is very 
 | Eva_Writemarker  | Marker value |   |int or byte| 
 | Eva_SetActiveMode  |    | Status | string |
 | Eva_SetPassiveMode  |    | Status | string |
-| Eva_Ping  |    | Pong, string | string|
+| Eva_Ping  |    | Pong | string|
 | Eva_MyInfo  |    | Device info | json string|
 | Eva_GetVersion  |    | Version |string|
 | Eva_GetSerial  |    | Serial no |String|
