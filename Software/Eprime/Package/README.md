@@ -1,5 +1,9 @@
-<!-- About Eva.epk -->
-## Package Calls
+<!-- About -->
+## About Eva.epk3 package
+The eva.epk3 package is developed for using the Eva response box with E-prime 3.<br>
+With this package the intergration of an Eva box in your E-prime script is very simple.
+
+
 
 <!-- Package calls -->
 ## Package Calls
