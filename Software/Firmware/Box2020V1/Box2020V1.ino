@@ -12,8 +12,8 @@
 void setup() {
   lptconnected();           //Check if lpt cable from pc is connected to the Biopac (or Biosemi) connector
   //writeStringToEEPROM(10,"S00794");
-  Serialno= readStringFromEEPROM(10);
-  
+  Serialno = readStringFromEEPROM(10);
+
   pinMode(STATUSLED1, OUTPUT);
   pinMode(STATUSLED2, OUTPUT);
   Serial.begin(115200);     // opens serial port, sets data rate to 115200 bps

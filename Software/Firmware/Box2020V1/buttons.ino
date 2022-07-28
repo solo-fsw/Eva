@@ -18,7 +18,7 @@ void debounceRespButtons() {            //Check if a response button is pressed,
 
   if ((millis() - lastDebounceTime) > debounceDelay) {
     if (PINB != lastrespbutton) {
-      Serial.write(PINB);
+     // Serial.write(PINB);
       for (uint8_t i = 0; i < 8; i++) {
         if (bitRead( PINB, i ) == 1) {
           Keyboard.print(char(49 + i));  //"A" +i
