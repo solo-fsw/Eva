@@ -28,13 +28,24 @@ With this package the intergration of an Eva box in your E-prime script is very 
 | SerialEva  | byte |   Com port used by Eva|  
 
 
-## Use markers with Stimulus.Onsettime
+<!-- How to use the package -->
+## Add package to E-Prime task
+Place the package file Eva.pkg3 preferably in the same location as the E-Prime task that uses the package. Add the package to the E-Prime task by going to Edit --> Experiment --> Packages --> Add. If the package is not listed here, go to Tools --> Options --> Packages. Here, the path where E-Prime searches for the package can be added. 
+
+## Send markers
 Place this code in the E-prime Userscript
 ```
 Sub SendMarker(c As context , x As Integer)
  Eva_WriteMarker x    
 End Sub
 ```
-Add the code and marker value to the required task event.
+
+A marker can be sent by using an inline with the following code: SendMarker c, <marker value> 
+ 
+Alternatively, a marker can be associated with the on- and offset of objects in E-Prime. To implement this, use task events, see below.
+
 
 ![Onsetmarker](https://user-images.githubusercontent.com/98744988/175535976-3020274b-d028-449e-a84f-acc6cafd22dc.gif)
+
+## Use button boxes
+When EVA is installed with button boxes, the buttons can be used as keyboard keys 1 - 8.
