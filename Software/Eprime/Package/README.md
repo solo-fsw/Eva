@@ -28,7 +28,6 @@ With this package the intergration of an Eva box in your E-prime script is very 
 | SerialEva  | byte |   Com port used by Eva|  
 
 
-<!-- How to use the package -->
 ## Add package to E-Prime task
 Place the package file Eva.pkg3 preferably in the same location as the E-Prime task that uses the package. Add the package to the E-Prime task by going to Edit --> Experiment --> Packages --> Add. If the package is not listed here, go to Tools --> Options --> Packages. Here, the path where E-Prime searches for the package can be added. 
 
@@ -40,9 +39,12 @@ Sub SendMarker(c As context , x As Integer)
 End Sub
 ```
 
-A marker can be sent by using an inline with the following code: SendMarker c, <marker value> 
+A marker can be sent by using an inline with the following code: 
+```
+SendMarker c, <marker value>
+```
  
-Alternatively, a marker can be associated with the on- and offset of objects in E-Prime. To implement this, use task events, see below.
+Alternatively, a marker can be associated with the on- and offset of objects in E-Prime. To implement this, use task events as shown below.
 
 
 ![Onsetmarker](https://user-images.githubusercontent.com/98744988/175535976-3020274b-d028-449e-a84f-acc6cafd22dc.gif)
