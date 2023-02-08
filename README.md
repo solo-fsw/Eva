@@ -49,13 +49,13 @@ For switching to command mode open the comport @ 4800 baud (4800,8,N,1).
 The red led Cmd will light up when it is in command mode.
  
 ## Command mode commands
-- V - Version will give info about Eva. Response Json String: {"Version":"HW1:SW1.2","Serialno":"S01234","Device":"Eva"}
-- S – Will put the SrBox2020 in passive data mode. Response: Passive
+- V - Version will give info about Eva. Response Json String: *{"Version":"HW1:SW1.2","Serialno":"S01234","Device":"Eva"}*
+- S – Will put the SrBox2020 in passive data mode. Response: *Passive*
 - A – Will put the SRBox2020 in active data mode
-- M - Will return the current state of the data mode. Response: Active
-- P – Ping the SrBox2020 to see if it’s alive. Response: Pong,Eva
+- M - Will return the current state of the data mode. Response: *Active*
+- P – Ping the SrBox2020 to see if it’s alive. Response: *Pong,Eva*
+
 
 Other commands will be ignored. Response : Unknown command 
 
 Commands are case sensitive.
-
