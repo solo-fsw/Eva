@@ -56,6 +56,6 @@ The red led Cmd will light up when it is in command mode.
 - P – Ping the SrBox2020 to see if it’s alive. Response: *Pong,Eva*
 
 
-Other commands will be ignored. Response : Unknown command 
+Other commands will be ignored. Response: *Unknown command* 
 
 Commands are case sensitive.
