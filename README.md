@@ -2,7 +2,7 @@
 Eva is a replacement of E-Prime's SRBox (serial response box). It is used to relay markers from stimulus PC to BIOPAC/BioSemi and relay button presses from button boxes to the stimulus PC and BioSemi. 
 
 ## Response Buttons
-Responses from the response buttons are keyboard events.
+Responses from the response buttons are processed as keyboard events.
 Button1 corresponds to keyboard 1, Button2 to keyboard 2 etc.
 There are only events on button press, not button release.
 Markers for Biosemi are D8 for Button1, D9 for Button2 etc.
