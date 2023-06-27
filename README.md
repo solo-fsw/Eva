@@ -49,10 +49,10 @@ The red led Cmd will light up when it is in command mode.
  
 ## Command mode commands
 - V - Gives info about Eva. Response is a Json String: *{"Version":"HW1:SW1.2","Serialno":"S01234","Device":"Eva"}*
-- S – Puts Eva in passive data mode. Response: *Passive*
-- A – Puts Eva in active data mode
+- S - Puts Eva in passive data mode. Response: *Passive*
+- A - Puts Eva in active data mode
 - M - Returns the current state of the data mode. Response: *Active*
-- P – Pings Eva to see if it’s alive. Response: *Pong,Eva*
+- P - Pings Eva to see if it’s alive. Response: *Pong,Eva*
 
 Other commands will be ignored. Response: *Unknown command* 
 
