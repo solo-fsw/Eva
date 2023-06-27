@@ -1,11 +1,11 @@
 # Eva
-Eva is a replacement of PST's SRBox (serial response box) and the parallel port (LPT). It is used to relay markers from stimulus PC to BIOPAC/BioSemi and relay button presses from button boxes to the stimulus PC and BioSemi. 
+Eva is a replacement of PST's SRBox (Serial Response Box) and the parallel port (LPT). It is used for sending or receiving markers. It also processes button responses, which are interpreted as keyboard buttons 1 - 8.
 
 ## Response Buttons
-Responses from the response buttons are processed as keyboard events.
+Responses from the response buttons are interpreted as keyboard events.
 Button1 corresponds to keyboard 1, Button2 to keyboard 2 etc.
-There are only events on button press, not button release.
-Markers for Biosemi are D8 for Button1, D9 for Button2 etc.
+There are only events on button presses, not button releases.
+Button markers for Biosemi are D8 for Button1, D9 for Button2 etc.
 | Button | Keyboard event	| Biosemi marker |
 | ------------- | ------------- | ------------- | 
 | 1 |	1	| D8 |
