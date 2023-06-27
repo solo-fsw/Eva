@@ -1,5 +1,5 @@
 # Eva
-Eva is a replacement of E-Prime's SRBox (serial response box). It is used to relay markers from stimulus PC to BIOPAC/BioSemi and relay button presses from button boxes to the stimulus PC and BioSemi. 
+Eva is a replacement of PST's SRBox (serial response box) and the parallel port (LPT). It is used to relay markers from stimulus PC to BIOPAC/BioSemi and relay button presses from button boxes to the stimulus PC and BioSemi. 
 
 ## Response Buttons
 Responses from the response buttons are processed as keyboard events.
