@@ -60,8 +60,7 @@ Other commands will be ignored. Response: *Unknown command*
 
 Commands are case sensitive.
 
-## Samples
-Samples can be found in the samples folder. 
+## How to use
 - In Python, the [marker_management library](https://github.com/solo-fsw/python-markers) can be used. 
 - In OpenSesame, the [markers plugin](https://github.com/solo-fsw/opensesame_plugin_markers/tree/main/opensesame_plugins) can be used. 
-- In E-Prime, the [Eva package](https://github.com/solo-fsw/Eva/tree/main/Samples/Eprime) can be used.
+- In E-Prime, the [Markers package](https://github.com/solo-fsw/eprime_package_markers) can be used.
