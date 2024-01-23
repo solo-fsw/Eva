@@ -29,7 +29,7 @@ Eva will set the value off the switches S0-S7 on the Biosemi and Biopac connecto
 ***Passive data mode:***
 This mode can be handy when you still want to use the parallel port as marker source. The parallel port cable need to be connected to the Biopac connector. Received markers will be send to the Biosemi connector and will be shown on led D0-D7. 
 Received markers on serial usb port and markers generated with the S0-S7 will be ignored.
-Passive mode will be indicated by the passive led.
+Passive mode will be indicated by the passive red led.
 
 ## Switch between passive and active data mode
 There are 3 possible options to switch between the active and passive data mode.
