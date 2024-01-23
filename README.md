@@ -33,12 +33,12 @@ Passive mode will be indicated by the passive red led.
 
 ## Switch between passive and active data mode
 There are 3 possible options to switch between the active and passive data mode.
-- Hold down the trigger button during powering up the SrBox2020, the data mode will be toggled and comfirmed by the led Passive.
+- Hold down the trigger button during powering up the Eva, the data mode will be toggled and comfirmed by the led Passive.
 - Place Eva in command mode and send an S for passive data mode or A for active data mode.
-- When the box detects during boot an high level on bit2 (0x04) it will switch to passive data mode. 
+- When the box detects during boot an high level on bit2 (0x04) it will switch to passive data mode.  
 
 Most parallel ports output bit2 high before initializing, if Eva detects this it’s most likely connected to an parallel port and will switch to input to protect itself.  
-Passive mode will be indicated by the passive led.
+Passive mode will be indicated by the passive red led.
 
 ## Data and command mode
 Data mode is used for sending markers, all the data that is sent over the serial usb connection will be set on the output connectors Biosemi and Biopac.
