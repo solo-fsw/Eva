@@ -60,6 +60,6 @@ Commands are case sensitive.
 
 ## How to use
 - In Python, the [marker_management library](https://github.com/solo-fsw/python-markers) can be used. 
-- In OpenSesame, the [markers plugin](https://github.com/solo-fsw/opensesame_plugin_markers/tree/main) can be used. 
+- In OpenSesame, the [markers_os4 plugin](https://github.com/solo-fsw/opensesame4_plugin_markers) (for OpenSesame 4) or [markers_os3 plugin](https://github.com/solo-fsw/opensesame3_plugin_markers) (for OpenSesame 3) can be used. 
 - In E-Prime, the [Markers package](https://github.com/solo-fsw/eprime_package_markers) can be used.
 - In MATLAB, see the [UsbParMarker documentation](https://github.com/solo-fsw/UsbParMarker/tree/main#matlab).
